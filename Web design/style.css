@@ -1,0 +1,31 @@
+title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: rgb(168, 0, 0);
+    background-color: rgba(133, 119, 100, 0.356);    
+}
+body{
+    background-color: rgba(0, 0, 0, 0);
+}
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.background.shape{
+    height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+}
+.shape:first-child {
+    background: linear-gradient(#1845ad,
+            #23a2f6);
+    left: -80px;
+    top: -80px;
+}
