@@ -1,142 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--hehehal-->
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mihir</title>
-    <meta name="description" content="this is description">
+
+    <title>Feedback</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            min-block-size: 4ch;
+
+
+
+        }
+
+        .background {
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(#24269b, #0f19cc);
+            left: -150px;
+            top: -250px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(to right, #ff512f, #e98c0a);
+            right: -110px;
+            bottom: -150px;
+        }
+
+        form {
+            height: auto;
+            width: auto;
+            background-color: rgba(255, 255, 255, 0.062);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 20px;
+            backdrop-filter: blur(50px);
+            border: 2px solid rgba(255, 255, 255, 0);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+            padding: 50px 35px;
+        }
+
+        form * {
+            font-family: "Poppins", sans-serif;
+            color: #ffffff;
+            letter-spacing: 1px;
+            outline: none;
+            border: none;
+        }
+
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        form h4 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(235, 232, 232, 0.096);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        textarea {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(235, 232, 232, 0.096);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: #f3f3f371;
+        }
+
+        .button {
+            margin-top: 50px;
+            width: 100%;
+            background-color: #8a8a8a62;
+            color: #ffffff;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s;
+            cursor: pointer;
+
+
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 4px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #eaf0fb;
+            text-align: center;
+        }
+
+        .social div:hover {
+            background-color: rgba(97, 71, 71, 0.47);
+        }
+
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
+        }
+
+        form select {
+
+            text-align: left;
+            display: block;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            align-self: center;
+            background-color: rgba(51, 50, 50, 0.801);
+            border-radius: 3px;
+            padding: 0 100px;
+            margin-top: 9px;
+            margin-left: 80px;
+
+        }
+    </style>
+
+    <script type="text/javascript"> var infolinks_pid = 3359994; var infolinks_wsid = 0; </script>
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+
 </head>
 
 <body>
-
-    <!--all size of fonts-->
-    <h1>hello</h1>
-    <h2>hello</h2>
-    <h3>hello</h3>
-    <h4>hello</h4>
-    <h5>hello</h5>
-    <h6>hello</h6>
-    <!--paragraph-->
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus libero quod exercitationem, commodi assumenda
-        corporis perferendis? Omnis recusandae eius ad pariatur suscipit. Amet iusto architecto aliquid accusamus
-        eligendi, incidunt repellendus?
-    </p>
-
-    <!--link add any-->
-    <a href="https://google.com" target="_blank">google</a><br>
-    <a href="https://www.ddit2k22.tk/" target="_blank">my website</a><br>
-    <a href="/Web design/style.css">css </a><br>
-    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="hello">
-
-    <!--listing-->
-    <ul type="circle">
-        <li>this is first item</li>
-        <li>this is first item</li>
-        <li>this is first item</li>
-    </ul>
-    <ol type="a">
-        <li>this is first item orderd</li>
-        <li>this is first item</li>
-        <li>this is first item</li>
-    </ol>
-
-    <!--table-->
-    <h3>HTML table</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>name</th>
-                <th>id</th>
-                <th>roll</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>mihir</td>
-                <td>1</td>
-                <td>it</td>
-            </tr>
-            <tr>
-                <td>mihir</td>
-                <td>1</td>
-                <td>it</td>
-            </tr>
-            <tr>
-                <td>mihir</td>
-                <td>1</td>
-                <td>it</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <!--forms-->
-    <h2>this is form </h2>
-    <form action=""></form>
-    <label for="name">Name</label>
-    <div>
-        <input type="text" name="name" id="name">
-
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-    <br>
+    <form method="post" name="google-sheet">
+        <h3>Feedback</h3>
 
-    <label for="id">Id</label>
-    <div>
-        <input type="number" name="id" id="id">
-    </div>
-    <br>
-    <div>
-        Email : <input type="email" name="myemail">
-    </div>
-    <br>
-    <div>
-        gender : male <input type="radio" name="check">female <input type="radio" name="check">
-    </div>
-    <br>
-    <div>
-        feedback :<br><textarea name="mytext" cols="30" rows="10"></textarea>
-    </div>
-    <br>
-    <div>
-        birth date <input type="date" name="date">
-    </div>
-    <br>
-    <div>
-        <div>
-            <label for="dp">Department</label>
-            <select name="mydp" id="dp">
-                <option value="it">IT</option>
-                <option value="ce">CE</option>
-                <option value="ch">CH</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="submit">
-            <input type="reset" value="Reset">
-        </div>
-        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="abc@gmail.com" id="email" name="email">
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name" name="name">
+
+        <label for="department">Department</label>
+        <select name="department" id="department" placeholder="department">
+            <h4>
+                <option value="none" id="department" ,>SELECT BRANCH</option>
+                <option value="IT" id="department">IT</option>
+                <option value="CE" id="department">CE</option>
+                <option value="EC" id="department">EC</option>
+                <option value="CH" id="department">CH</option>
+                <option value="CIVIL" id="department">CIVIL</option>
+                <option value="MH" id="department">MH</option>
+                <option value="IC" id="department">IC</option>
+
+            </h4>
+        </select>
+
+        <label for="rollno">DDU ID</label>
+        <input type="text" name="Roll No" id="Roll No" placeholder="21ITUOS000">
+        <label for="feedback_text">Feedback</label>
+        <!--<input type="text" value="" id="feedback_text" , width="50%", name="feedback_text">-->
+        <textarea name="feedback_text" id="feedback_text" cols="30" rows="10" ,
+            placeholder="Give your Feedback"></textarea>
+
+        <button name="submit" , class="button" , id="submit"><span>Submit</span></button>
+        <!--<label for="submit">Submit</label>
+        <input type="submit" value="Login" name="submit" id="submit">-->
+    </form>
 
 
-        <!--block element-->
-
-        <h1 style="border: 3px solid rgb(253, 0, 0);">hello</h1>
-
-
-        <!--id and classes-->
-        <div id="mainbox" class="redbg">
-
-            <!--. is use for class # for id-->
-
-        </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw1Bd7xxw2RJkoZnK0vRjygfCuEeb7PUPj-8mLnm0676YcNXiIfrDTJS87VpAWCTRIY/exec'
+        const form = document.forms['google-sheet']
 
 
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+
+            var email = $("#email").val();
+            if (email == '') {
+                swal({
+                    title: "Enter The Email",
+                    icon: "warning",
+                })
+            }
+            else {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => swal({
+                        title: "Thanks for Feedback",
+                        icon: "success",
+
+                    }))
+                    .catch(error => console.error('Error!', error.message))
+
+            }
+
+        })
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
+
 
 </html>

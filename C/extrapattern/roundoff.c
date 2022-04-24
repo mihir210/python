@@ -1,25 +1,21 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
 
-int main()
-{
-    float n;
-
-    int k;
-
-    printf("enter the number :");
-    scanf("%f", &n);
-
-    if (n < 0)
-    {
-        k = n - 0.5;
+    char *s;
+    
+    scanf("%[^\n]", s);
+    
+    for (int i; *(s+i)!='\0'; i++) {
+        if (*(s+i)==' ') {
+        *(s+i)='\n';
+        }
     }
-    else
-    {
-        k = n + 0.5;
-    }
-
-    printf("number after rounding %d", k);
-
+    
+    puts(s);
+    
     return 0;
 }

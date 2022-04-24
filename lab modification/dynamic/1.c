@@ -2,10 +2,10 @@
 Write a program which Sorts all the elements of 1-D Array.
 */
 
-// #include <stdio.h>
-// #include <stdlib.h>
+// !#include <stdio.h>
+// *#include <stdlib.h>
 // #include<time.h>
-#include <myh.h>
+#include "D:\course\DDU\lab practicals\lab modification\exp -1\myh.h"
 
 
 
