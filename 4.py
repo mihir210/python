@@ -26,3 +26,7 @@ print(num)
 num.pop()  # last number delete
 
 print(num)
+num[0] = 89
+print("After first number change", num)
+tp = (1,2,3)  # this () bracket called tupple we can not change value of this
+print(tp)
