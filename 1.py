@@ -3,4 +3,4 @@
 print("My name is Mihir", end=" ")
 print("I am from IT department")
 
-print("My name is Mihir","I am from IT department", end=" ")
+print("My name is Mihir","I am from IT department")
