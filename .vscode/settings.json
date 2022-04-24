@@ -1,0 +1,15 @@
+{
+  "git.enabled": false,
+  "files.associations": {
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "istream": "cpp",
+    "stdio.h": "c",
+    "*.tcc": "cpp",
+    "algorithm": "cpp",
+    "iterator": "cpp",
+    "random": "cpp",
+    "functional": "cpp",
+    "regex": "cpp"
+  }
+}

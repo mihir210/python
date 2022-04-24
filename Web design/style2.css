@@ -1,0 +1,221 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+.mainimg {
+  width: 170px;
+  border-radius: 25px;
+  border: 5px solid rgba(205, 205, 205, 0.726);
+  box-shadow: 0px 0 50px rgba(143, 143, 143, 0.625);
+  margin-left: 50px;
+  animation-name            : imga;
+  animation-duration        : 4s;
+  
+  
+}
+
+.main {
+  height: 1200px;
+  width: 1100px;
+  background-color: rgba(38, 38, 38, 0.548);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 800px;
+  left: 50%;
+  bottom: 520px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(186, 186, 186, 0.495);
+  box-shadow: 0 0 50px rgba(181, 180, 180, 0.597);
+  padding: 50px 35px;
+}
+
+
+
+body {
+  background-color: rgba(17, 16, 16, 0.737);
+  background: url(logo7.png)  center center;
+  height: 1500px;
+  width: auto;
+}
+
+.main * {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #121111;
+  letter-spacing: 1px;
+  outline: none;
+  /* border: none; */
+}
+
+.main_raw {
+  height: 260px;
+}
+
+.my_name {
+  color: white;
+  margin-right: 200px;
+  font-family: "Cascadia code";
+  font-size: 50px;
+}
+
+@keyframes imga {
+  from {
+    transform : scale(0.1);
+    opacity   : 0.25;
+  }
+  to {
+      transform : scale(1);
+      opacity   : 1;
+  }
+}
+
+
+
+
+.dev_name {
+  color: rgba(255, 255, 255, 0.788);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 200px;
+}
+
+.about_text {
+  color: rgb(255, 251, 251);
+  margin-left: 50px;
+}
+
+.para_text {
+  color: rgb(255, 255, 255);
+  width: 90%;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.r_1_c_1 {
+  color: rgb(255, 255, 255);
+  width: 90%;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.r_1_c_2 {
+  color: rgb(255, 255, 255);
+  width: 78%;
+  margin-left: 500px;
+  font-size: large;
+}
+
+hr {
+  color: aliceblue;
+}
+
+
+.pro_bar {
+  color: rgb(255, 255, 255);
+  width: 90%;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 1px 1px;
+  display: flex;
+  height: 18px;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.progress-value_c {
+  animation: load 7s normal forwards;
+  
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgb(221, 8, 15);
+  height: 15px;
+  width: 0;
+}
+
+.progress-value_py {
+  animation: load_py 5s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgb(225, 208, 22);
+  height: 15px;
+  width: 0;
+}
+
+.progress-value_ja {
+  animation: load_ja 4s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgb(11, 150, 249);
+  height: 15px;
+  width: 0;
+}
+
+.progress-value_sql {
+  animation: load_sql 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgb(12, 236, 23);
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes load_py {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes load_ja {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 43%;
+  }
+}
+
+@keyframes load_sql {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+
+
+
+/* th,
+td,
+tr {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  padding: 15px;
+  border: 2px, solid rgb(3, 3, 3);
+} */
