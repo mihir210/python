@@ -18,4 +18,11 @@ print("before append", num)
 num.append(86)  # 86 at last
 print(num)
 
+num.insert(1,78)
+print(num)
 
+num.remove(78)
+print(num)
+num.pop()  # last number delete
+
+print(num)
