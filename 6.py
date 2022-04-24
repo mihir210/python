@@ -16,3 +16,4 @@ d3 = d2.copy()   ##d2 copy pass not reference
 del d3["mihir"]
 
 print(d3)
+print(d2)
