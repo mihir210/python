@@ -1,4 +1,4 @@
-mystr = "My name is Mihir"
+mystr = "my name is Mihir"
 print(mystr[11:16])  # print 11 to 16 index  11 include 16 exclude
 print(len(mystr))
 
