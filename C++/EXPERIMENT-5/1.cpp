@@ -8,7 +8,6 @@ d = size()
 e = compare()
 f = length()
 g =  swap()
-
 */
 
 #include <iostream>
