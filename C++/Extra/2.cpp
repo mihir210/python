@@ -14,6 +14,7 @@ int main()
 
     a=a+b;
     b=a-b;
+
     a=a-b;
 
     cout<<"value of a is "<<a<<" and value of b is "<<b<<endl;
