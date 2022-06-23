@@ -59,3 +59,7 @@ while True:
   elif n== 4:
     print("exiting the program")
     break
+  else:
+      print("Enter correct choice")
+      continue
+
