@@ -15,7 +15,7 @@ def insert():
     m = (t1 // 30)
     d = (t1 % 30)
     mys = mydb.cursor()
-    data = 'INSERT INTO `days_to`(`total_days`, `year`, `month`, `days`, `id`) values(%s,%s, %s, %s, 1)'
+    data = 'INSERT INTO `days_to`(`total_days`, `year`, `month`, `days`) values(%s,%s, %s, %s)'
     va = (to_days, y, m, d)
     mys.execute(data, va)
     mydb.commit()
@@ -40,7 +40,7 @@ def display():
   mydb.commit()
 def erase():
   mys = mydb.cursor()
-  data = 'DELETE FROM `days_to` WHERE `id` = 1'
+  data = 'TRUNCATE TABLE `python`.`days_to`'
   mys.execute(data)
   mydb.commit()
 

@@ -46,7 +46,7 @@ def display():
 
 def erase():
   mys = mydb.cursor()
-  data = 'DELETE FROM `temperature` WHERE `id` = 1 OR `id` = 2'
+  data = 'TRUNCATE TABLE `python`.`temperature`'
   mys.execute(data)
   mydb.commit()
 def printline():
@@ -67,4 +67,7 @@ while True:
   elif n == 3:
     erase()
   elif n== 4:
+    print("Exit program")
     break
+  else:
+    continue

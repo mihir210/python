@@ -13,7 +13,7 @@ def insert():
   name = input("Enter the name of student :")
   cpi = float(input("Enter the cpi of student :"))
   mys = mydb.cursor()
-  data = 'INSERT INTO `student_data` values(%s,%s, %s, 1)'
+  data = 'INSERT INTO `student_data` values(%s,%s, %s)'
   va = (id, name, cpi)
   mys.execute(data, va)
   mydb.commit()
@@ -38,12 +38,14 @@ def display():
 
 def erase():
   mys = mydb.cursor()
-  data = 'DELETE FROM `student_data` WHERE `delete-id` = 1'
+  data = 'TRUNCATE TABLE `python`.`student_data`'
   mys.execute(data)
   mydb.commit()
 
 
 mys = mydb.cursor()
+print("This program get data of student ")
+printline()
 while True:
   print("1.insert", "2.display", "3.clear all data", "4.exit")
   n = int(input())
