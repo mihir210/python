@@ -8,7 +8,7 @@ import  webbrowser
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 #print(voices[1].id)
 def speak(audio):
     engine.say(audio)
@@ -23,13 +23,13 @@ def wishme():
     else:
         speak("good evening")
 
-    speak("I am Jarvis Sir. please tell me how may I help you")
+    speak("I am Jarvis. please tell me how may I help you")
 
 def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold = 0.5
+        r.pause_threshold = 1
         audio = r.listen(source)
 
     try:
@@ -72,5 +72,5 @@ if __name__ == '__main__':
             speak("Opening Whatsapp")
             os.startfile(wpath)
         elif 'exit' in query:
-            speak("good by sir, have a nice day")
+            speak("good by, have a nice day")
             exit(0)
