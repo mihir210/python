@@ -21,7 +21,7 @@ def insert():
     mydb.commit()
 
 def printline():
-  for i in range(50):
+  for i in range(90):
     print("-", end = '')
 
   print()
@@ -36,7 +36,7 @@ def display():
     printline()
     print("Total days = ", i[0], "       YEAR = ", i[1], "MONTH = ", i[2], "DAYS = ", i[3])
 
-  print()
+  printline()
   mydb.commit()
 def erase():
   mys = mydb.cursor()
