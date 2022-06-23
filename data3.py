@@ -57,4 +57,5 @@ while True:
   elif n == 3:
     erase()
   elif n== 4:
+    print("exiting the program")
     break
