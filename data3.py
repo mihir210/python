@@ -10,10 +10,10 @@ mydb = db.connect(
 
 def insert():
     to_days = int(input("Enter the total days : "))
-    y = to_days / 360
-    t1 = to_days % 360
-    m = t1 / 30
-    d = t1 % 30
+    y = (to_days//360)
+    t1 = (to_days % 360)
+    m = (t1 // 30)
+    d = (t1 % 30)
     mys = mydb.cursor()
     data = 'INSERT INTO `days_to`(`total_days`, `year`, `month`, `days`, `id`) values(%s,%s, %s, %s, 1)'
     va = (to_days, y, m, d)
