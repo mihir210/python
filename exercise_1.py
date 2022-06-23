@@ -1,47 +1,63 @@
-# Creating database
-# It captures images and stores them in datasets
-# folder under the folder name of sub_data
-import cv2, sys, numpy, os
-haar_file = 'haarcascade_frontalface_default.xml'
+class MovingPoint:
 
-# All the faces data will be
-# present this folder
-datasets = 'datasets'
+    def __init__(self):
+        #instance fields found by C++ to Python Converter:
+        self._x = 0
+        self._y = 0
+
+    @staticmethod
+    def initialize(a, b):
+        self._x = a
+        self._y = b
+    def move_left(self, a):
+        self._x = self._x - a
+    def move_right(self, a):
+        self._x = self._x + a
+    def move_up(self, b):
+        self._y = self._y + b
+    def move_down(self, b):
+        self._y = self._y - b
+    def print_current_position(self):
+        print(self._x, end = '')
+        print(" ", end = '')
+        print(self._y, end = '')
 
 
-# These are sub data sets of folder,
-# for my faces I've used my name you can
-# change the label here
-sub_data = 'vivek'	
 
-path = os.path.join(datasets, sub_data)
-if not os.path.isdir(path):
-	os.mkdir(path)
 
-# defining the size of images
-(width, height) = (130, 100)
 
-#'0' is used for my webcam,
-# if you've any other camera
-# attached use '1' like this
-face_cascade = cv2.CascadeClassifier(haar_file)
-webcam = cv2.VideoCapture(0)
+def main():
 
-# The program loops until it has 30 images of the face.
-count = 1
-while count < 30:
-	(_, im) = webcam.read()
-	gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-	faces = face_cascade.detectMultiScale(gray, 1.3, 4)
-	for (x, y, w, h) in faces:
-		cv2.rectangle(im, (x, y), (x + w, y + h), (255, 0, 0), 2)
-		face = gray[y:y + h, x:x + w]
-		face_resize = cv2.resize(face, (width, height))
-		cv2.imwrite('% s/% s.png' % (path, count), face_resize)
-	count += 1
-	
-	cv2.imshow('OpenCV', im)
-	key = cv2.waitKey(10)
-	if key == 27:
-		break
+    mp = MovingPoint()
+    x = None
+    y = None
+    n = None
+    i = None
+    units = None
+    direction = None
 
+    std::cin >> x >> y
+    MovingPoint.initialize(x, y)
+
+    cin >> n
+    for i in range(0, n):
+        std::cin >> direction >> units
+        if direction == 'L':
+            mp.move_left(units)
+        elif direction == 'R':
+            mp.move_right(units)
+        elif direction == 'U':
+            mp.move_up(units)
+        elif direction == 'D':
+            mp.move_down(units)
+
+    # This call to initialize method should be ingored
+    # If this method is called twice, it should be ignored as per specification
+    # This call should not change the state of the object
+    MovingPoint.initialize(0, 0)
+
+    # Printing final position of the point as output
+    mp.print_current_position()
+
+if __name__ == "__main__":
+    main()
