@@ -42,23 +42,24 @@ def erase():
   mys.execute(data)
   mydb.commit()
 
+if __name__ == '__main__':
 
-mys = mydb.cursor()
-print("This program get data of student ")
-printline()
-while True:
-  print("1.insert", "2.display", "3.clear all data", "4.exit")
-  n = int(input())
+    mys = mydb.cursor()
+    print("This program get data of student ")
+    printline()
+    while True:
+      print("1.insert", "2.display", "3.clear all data", "4.exit")
+      n = int(input())
 
-  if n == 1:
-    insert()
-  elif n== 2:
-    display()
-  elif n == 3:
-    erase()
-  elif n== 4:
-    print("exiting the program")
-    break
-  else:
-      print("Enter correct choice")
-      continue
+      if n == 1:
+        insert()
+      elif n== 2:
+        display()
+      elif n == 3:
+        erase()
+      elif n== 4:
+        print("exiting the program")
+        break
+      else:
+          print("Enter correct choice")
+          continue

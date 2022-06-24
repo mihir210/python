@@ -43,22 +43,25 @@ def erase():
   mys.execute(data)
   mydb.commit()
 
-print("This program calculate year month days from given total days and save to database")
-mys = mydb.cursor()
-while True:
-  print("1.insert", "2.display", "3.clear all data", "4.exit")
-  n = int(input())
 
-  if n == 1:
-    insert()
-  elif n== 2:
-    display()
-  elif n == 3:
-    erase()
-  elif n== 4:
-    print("exiting the program")
-    break
-  else:
-      print("Enter correct choice")
-      continue
+
+if __name__ == '__main__':
+    print("This program calculate year month days from given total days and save to database")
+    mys = mydb.cursor()
+    while True:
+      print("1.insert", "2.display", "3.clear all data", "4.exit")
+      n = int(input())
+
+      if n == 1:
+        insert()
+      elif n== 2:
+        display()
+      elif n == 3:
+        erase()
+      elif n== 4:
+        print("exiting the program")
+        break
+      else:
+          print("Enter correct choice")
+          continue
 
