@@ -1,12 +1,14 @@
-import mysql.connector as db
+# import mysql.connector as db
+#
+# mydb = db.connect(
+#   host="localhost",
+#   port="3306",
+#   username="root",
+#   password="",
+#   database="python"
+# )
+from connection import mydb
 
-mydb = db.connect(
-  host="localhost",
-  port="3306",
-  username="root",
-  password="",
-  database="python"
-)
 
 def insert():
   id = input("Enter the id of student :")

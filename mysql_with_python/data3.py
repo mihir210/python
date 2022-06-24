@@ -1,12 +1,12 @@
-import mysql.connector as db
-mydb = db.connect(
-  host="localhost",
-  port="3306",
-  username="root",
-  password="",
-  database="python"
-)
-
+# import mysql.connector as db
+# mydb = db.connect(
+#   host="localhost",
+#   port="3306",
+#   username="root",
+#   password="",
+#   database="python"
+# )
+from connection import mydb
 def insert():
     to_days = int(input("Enter the total days : "))
     y = (to_days//360)

@@ -1,12 +1,12 @@
-import mysql.connector as db
+from connection import mydb
 
-mydb = db.connect(
-  host="localhost",
-  port="3306",
-  username="root",
-  password="",
-  database="python"
-)
+# mydb = db.connect(
+#   host="localhost",
+#   port="3306",
+#   username="root",
+#   password="",
+#   database="python"
+# )
 def insert():
   print("1. fahrenheat to calsius", "2.calsius to fahrenheat")
   id = int(input())
