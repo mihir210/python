@@ -1,3 +1,5 @@
+
+
 class teacher:
     def getmark(self):
         print("Enter the mark")
