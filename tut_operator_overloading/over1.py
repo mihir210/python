@@ -16,7 +16,7 @@ class emp:
 
 if __name__ == '__main__':
     e1 = emp(12)
-    e2 = emp(13)
+    e2 = emp(17)
 
     e3 = e1 + e2
     print(e3.q1)
