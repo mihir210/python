@@ -1,3 +1,4 @@
+
 class A:
     def met(self):
         print("class A")
@@ -20,3 +21,4 @@ class D(B, C):
 if __name__ == '__main__':
     d  = D()
     d.met()
+    c = si.result()

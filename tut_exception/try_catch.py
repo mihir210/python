@@ -1,3 +1,6 @@
+
+
+
 n1 = input("enter number 1")
 n2 = input("Enter number 2")
 
