@@ -16,9 +16,9 @@ class stuent:
         self.__dc =2   ## __private  _protected
         print(self.__dc)
 
-s1 = stuent()
-s2 = stuent()
-s1.mark = 98
-s2.mark =100
-print(s1.printli())
-print(s1+s2)
+# s1 = stuent()
+# s2 = stuent()
+# s1.mark = 98
+# s2.mark =100
+# print(s1.printli())
+# print(s1+s2)
