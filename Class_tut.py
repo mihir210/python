@@ -1,3 +1,4 @@
+
 class stuent:
     def __init__(self, name, id, mark):
         self.name = name
